@@ -1,0 +1,14 @@
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\DAL\bin\Debug\DAL.dll
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\DAL\bin\Debug\DAL.pdb
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\DAL\bin\Debug\Models.dll
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\DAL\bin\Debug\Models.pdb
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\DAL\obj\Debug\DAL.dll
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\DAL\obj\Debug\DAL.pdb
+G:\学习\Asp.Net学习\MvcApplication1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\学习\Asp.Net学习\MvcApplication1\DAL\obj\Debug\DAL.dll
+G:\学习\Asp.Net学习\MvcApplication1\DAL\obj\Debug\DAL.pdb
+G:\学习\Asp.Net学习\MvcApplication1\DAL\bin\Debug\DAL.dll
+G:\学习\Asp.Net学习\MvcApplication1\DAL\bin\Debug\DAL.pdb
+G:\学习\Asp.Net学习\MvcApplication1\DAL\bin\Debug\Models.dll
+G:\学习\Asp.Net学习\MvcApplication1\DAL\bin\Debug\Models.pdb

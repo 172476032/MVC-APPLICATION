@@ -1,0 +1,10 @@
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\Models\bin\Debug\Models.dll
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\Models\bin\Debug\Models.pdb
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\Models\obj\Debug\Models.dll
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\Models\obj\Debug\Models.pdb
+E:\学习\aspNET课程资料\第二个mvc实例\MvcApplication1\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+G:\学习\Asp.Net学习\MvcApplication1\Models\bin\Debug\Models.dll
+G:\学习\Asp.Net学习\MvcApplication1\Models\bin\Debug\Models.pdb
+G:\学习\Asp.Net学习\MvcApplication1\Models\obj\Debug\Models.dll
+G:\学习\Asp.Net学习\MvcApplication1\Models\obj\Debug\Models.pdb
+G:\学习\Asp.Net学习\MvcApplication1\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
