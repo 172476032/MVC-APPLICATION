@@ -4,33 +4,83 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
-using System.Configuration; 
+using System.Configuration;
 
-namespace DAL.Helper
+
+namespace DAL
 {
-    public abstract class SQLHelper
+    /// <summary>
+    /// 通用数据访问类
+    /// </summary>
+    class SQLHelper
     {
-        public static readonly string connstring = ConfigurationManager.AppSettings["SQLConnString1"];
+        private static readonly string connString = ConfigurationManager.ConnectionStrings["connString"].ToString();
 
-        public static object getsigle(string sql)
+        /// <summary>
+        /// 执行增删改方法
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public static int Update(string sql)
         {
-            SqlConnection sqlconn = new SqlConnection(connstring);
-            sqlconn.Open();
-            SqlCommand sqlcom = new SqlCommand(sql, sqlconn);
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(sql, conn);
             try
             {
-                object sqldata = sqlcom.ExecuteScalar();
-                return sqldata;
+                conn.Open();
+                return cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-
-                throw new Exception("发生了数据库的错误" + ex.Message);
+                throw ex;
             }
             finally
             {
-                sqlconn.Close();
+                conn.Close();
             }
         }
+        /// <summary>
+        /// 执行单一结果查询
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public static object GetSingleResult(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            try
+            {
+                conn.Open();
+                return cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        /// <summary>
+        /// 执行一个结果集的查询
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public static SqlDataReader GetReader(string sql)
+        {
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            try
+            {
+                conn.Open();
+                return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+                throw ex;
+            }         
+        }
     }
-}   
+}
